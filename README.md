@@ -19,7 +19,13 @@
   `#ServerRoot:apache服务器根目录。主配置文件，日志都在该目录。`  
   `#注意路径结束时不要加斜杠，默认时/etc/apache2`  
   `ServerRoot "/etc/apache2“`  
-  `LockFile ${APACHE_LOCK_DIR}/accept.lock`
+  `LockFile ${APACHE_LOCK_DIR}/accept.lock`  
+  `#apache服务启动时在该文件记录进程ID号`  
+  `#This needs to be set in /etc/apache/envvars`  
+  `PidFile ${APACHE_PID_FILE}`  
+  `#连接超时，单位秒`  
+  `Timeout`  
+  
   
 # **Linux常用命令**
 * 新建文件touch 文件名  
