@@ -10,16 +10,16 @@
   
 ## apache2.conf配置文件
   该文件是apache的住配置文件，包括三个级别的配置。
-* 控制apache服务器执行过程的全局配置 
+* 控制apache服务器执行过程的全局配置。
 * 定义主服务或者默认服务器的参数配置，这些配置会响应Virtual Host不处理的请求。这类配置也为  
   所有的Virtual Host配置提供默认值。
 * Virtual Host相关的配置使得同一个apache服务进程处理向不同IP地址或者主机名发送的请求。
-  `#Section1:Global Environment  
-   #ServerRoot:apache服务器根目录。主配置文件，日志都在该目录。  
-   #注意路径结束时不要加斜杠，默认时/etc/apache2  
-   ServerRoot "/etc/apache2  
-   LockFile ${APACHE_LOCK_DIR}/accept.lock
-   "`
+
+  `#Section1:Global Environment`  
+  `#ServerRoot:apache服务器根目录。主配置文件，日志都在该目录。`  
+  `#注意路径结束时不要加斜杠，默认时/etc/apache2`  
+  `ServerRoot "/etc/apache2“`  
+  `LockFile ${APACHE_LOCK_DIR}/accept.lock`
   
 # **Linux常用命令**
 * 新建文件touch 文件名  
