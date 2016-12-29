@@ -24,8 +24,23 @@
   `#This needs to be set in /etc/apache/envvars`  
   `PidFile ${APACHE_PID_FILE}`  
   `#连接超时，单位秒`  
-  `Timeout`  
-  
+  `Timeout  
+  `  
+# 重启Ubuntu后apache出现问题的解决方案  
+* 现象  
+[Thu Dec 29 21:28:26.497367 2016] [core:warn] [pid 2972] AH00111: Config variable ${APACHE_LOCK_DIR} is not defined
+[Thu Dec 29 21:28:26.497425 2016] [core:warn] [pid 2972] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Thu Dec 29 21:28:26.497442 2016] [core:warn] [pid 2972] AH00111: Config variable ${APACHE_RUN_USER} is not defined
+[Thu Dec 29 21:28:26.497450 2016] [core:warn] [pid 2972] AH00111: Config variable ${APACHE_RUN_GROUP} is not defined
+[Thu Dec 29 21:28:26.497469 2016] [core:warn] [pid 2972] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Thu Dec 29 21:28:26.500136 2016] [core:warn] [pid 2972:tid 140699129208320] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Thu Dec 29 21:28:26.500297 2016] [core:warn] [pid 2972:tid 140699129208320] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Thu Dec 29 21:28:26.500312 2016] [core:warn] [pid 2972:tid 140699129208320] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00526: Syntax error on line 74 of /etc/apache2/apache2.conf:
+Invalid Mutex directory in argument file:${APACHE_LOCK_DIR}  
+
+* 解决方案  
+sudo /etc/init.d/apache2 restart 后解决
   
 # **Linux常用命令**
 * 新建文件touch 文件名  
