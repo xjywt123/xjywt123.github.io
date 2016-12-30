@@ -27,6 +27,7 @@
   `Timeout  
   `  
 # **重启Ubuntu后apache出现问题的解决方案**  
+
 * 现象  
 AH00526: Syntax error on line 74 of /etc/apache2/apache2.conf:
 Invalid Mutex directory in argument file:${APACHE_LOCK_DIR} 
