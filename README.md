@@ -24,8 +24,8 @@
   `#This needs to be set in /etc/apache/envvars`  
   `PidFile ${APACHE_PID_FILE}`  
   `#连接超时，单位秒`  
-  `Timeout  
-  `  
+  `Timeout`  
+  
 # **重启Ubuntu后apache出现问题的解决方案**  
 
 * 现象  
