@@ -33,10 +33,13 @@ AH00526: Syntax error on line 74 of /etc/apache2/apache2.conf:
 Invalid Mutex directory in argument file:${APACHE_LOCK_DIR} 
 
 * 解决方案  
-sudo /etc/init.d/apache2 restart 后解决
-  
-# **Linux常用命令**
-* 新建文件touch 文件名  
+sudo /etc/init.d/apache2 restart 后解决  
 
-# **图片**  
+# **Linux常用命令**   
+
+* 新建文件touch 文件名  
+* 查询网络端口占用 netstat -ap
+* 杀死进程 kill + pid  
+
+# **图片**  
 ![my_img](http://img06.tooopen.com/images/20160920/tooopen_sy_179407883616.jpg)
