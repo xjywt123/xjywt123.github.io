@@ -45,8 +45,9 @@ sudo /etc/init.d/apache2 restart 后解决
 * ls / 将列出根目录下的文件清单,如果给定一个参数，将会使该参数作为命令行的运行目录  
 * ls -l 将会列出更详尽的文件清单
 * ls -a 将会给出所有文件的清单，包括隐藏文件  
+* ls -p 显示文件类型  
 
-## 3.2.查询当前所在目录  
+## 3.2.查询当前所在目录  
 * pwd  
 
 ## 3.3.进入其他目录  
@@ -65,4 +66,5 @@ sudo /etc/init.d/apache2 restart 后解决
 * touch  your file name  
 
 ## 3.8.删除文件目录  
-* rm -i  your file name 删除文件时询问
+* rm -i  your file name 删除文件时显示提示信息，i就是interface的意思
+* rm -r your dir name 删除文件夹时必须指定-R,R就是recursive即循环参数
