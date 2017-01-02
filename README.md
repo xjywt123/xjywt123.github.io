@@ -59,4 +59,10 @@ sudo /etc/init.d/apache2 restart 后解决
 *  cat your file name  
 
 ## 3.6.移动文件  
-* mv file1.txt file2.txt 此时，file1.txt被删除，其内容被移到file2.txt
+* mv file1.txt file2.txt 此时，file1.txt被删除，其内容被移到file2.txt,在后面加 -v 会显示移动文件的反馈信息  
+
+## 3.7.建立空文本文件  
+* touch  your file name  
+
+## 3.8.删除文件目录  
+* rm -i  your file name 删除文件时询问
