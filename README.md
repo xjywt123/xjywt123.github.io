@@ -50,3 +50,4 @@ sudo /etc/init.d/apache2 restart 后解决
 * pwd  
 
 ## 3.3.进入其他目录  
+* cd cd/root/
