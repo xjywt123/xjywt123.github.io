@@ -87,4 +87,11 @@ sudo /etc/init.d/apache2 restart 后解决
 
 ### 4.0.3.输入重定向  
 * 还可以把文件的内容作为命令的输入  
-* 如sort < your file name
+* 如sort < your file name  
+
+### 4.0.4.管道  
+* Linux的强大之处在于能把简单的命令组合成复杂的功能，通过键盘上的"|"符号完成，即把前一个命令的输出当做后一个命令的输入  
+* 
+
+## 4.1.grep命令  
+* Linux系统中grep命令是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹配的行打印出来。grep全称是Global Regular Expression Print，表示全局正则表达式版本，它的使用权限是所有用户
