@@ -67,4 +67,9 @@ sudo /etc/init.d/apache2 restart 后解决
 
 ## 3.8.删除文件目录  
 * rm -i  your file name 删除文件时显示提示信息，i就是interface的意思
-* rm -r your dir name 删除文件夹时必须指定-R,R就是recursive即循环参数
+* rm -r your dir name 删除文件夹时必须指定-R,R就是recursive即循环参数  
+* alias rm = "rm -i" -i 会成为rm命令的默认参数  
+
+## 3.9.查看进程  
+* ps查看你所启动的所有进程  
+* ps -a 查看所有进程，包括其他用户启动的进程
