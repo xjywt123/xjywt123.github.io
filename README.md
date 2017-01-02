@@ -1,14 +1,14 @@
 
-# **1 Ubuntu16.10环境下Apache配置**  
+# **1  Ubuntu16.10环境下Apache配置**  
   Ubuntu用apt-get install apache2安装apache2后，配置文件都在/etc/apache2目录下。
 
-## 1.1 基本原理
+## 1.1  基本原理
   apache2在启动的时候自动读取/etc/apache2/apache.conf文件的配置信息，不同的配置项按功能  
   分布在不同的文件中，然后被Include包含到apache2.conf这个主配置文件中，方便管理。就是说事  
   实apache2主配置文件只有一个，即apache2.conf，其他的都是被Include进来的。可以把所以的配  
   置都放在apache2.conf或者任何一个配置文件中，但是划分到不同文件会让我们管理起来方便很多。
   
-## 1.2 apache2.conf配置文件
+## 1.2  pache2.conf配置文件
   该文件是apache的住配置文件，包括三个级别的配置。
 * 控制apache服务器执行过程的全局配置。
 * 定义主服务或者默认服务器的参数配置，这些配置会响应Virtual Host不处理的请求。这类配置也为  
@@ -26,7 +26,7 @@
   `#连接超时，单位秒`  
   `Timeout`  
   
-# **2 重启Ubuntu后apache出现问题的解决方案**  
+# **2  重启Ubuntu后apache出现问题的解决方案**  
 
 * 现象  
 AH00526: Syntax error on line 74 of /etc/apache2/apache2.conf:
@@ -35,19 +35,19 @@ Invalid Mutex directory in argument file:${APACHE_LOCK_DIR}
 * 解决方案  
 sudo /etc/init.d/apache2 restart 后解决  
 
-# **3 Linux常用命令**   
+# **3  Linux常用命令**   
 
 * 新建文件touch 文件名  
 * 查询网络端口占用 netstat -ap
 * 杀死进程 kill + pid  
 * Tab键，命令行自动补全，  两下Tab键，列出所有可选命令行补全  
 
-## 3.1 查询文件列表，ls命令  
+## 3.1  查询文件列表，ls命令  
 
 * ls / 将列出根目录下的文件清单,如果给定一个参数，将会使该参数作为命令行的运行目录  
 * ls -l 将会列出更详尽的文件清单
 * ls -a 将会给出所有文件的清单，包括隐藏文件  
 
-## 3.2 查询当前所在目录
+## 3.2  查询当前所在目录
 * pwd  
 
