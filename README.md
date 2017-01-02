@@ -36,18 +36,17 @@ Invalid Mutex directory in argument file:${APACHE_LOCK_DIR}
 sudo /etc/init.d/apache2 restart 后解决  
 
 # **3.Linux常用命令**   
-
 * 新建文件touch 文件名  
 * 查询网络端口占用 netstat -ap
 * 杀死进程 kill + pid  
 * Tab键，命令行自动补全，  两下Tab键，列出所有可选命令行补全  
 
 ## 3.1.查询文件列表，ls命令  
-
 * ls / 将列出根目录下的文件清单,如果给定一个参数，将会使该参数作为命令行的运行目录  
 * ls -l 将会列出更详尽的文件清单
 * ls -a 将会给出所有文件的清单，包括隐藏文件  
 
-## 3.2.查询当前所在目录
+## 3.2.查询当前所在目录  
 * pwd  
 
+## 3.3.进入其他目录  
