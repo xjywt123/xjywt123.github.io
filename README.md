@@ -50,4 +50,13 @@ sudo /etc/init.d/apache2 restart 后解决
 * pwd  
 
 ## 3.3.进入其他目录  
-* cd cd/root/
+* cd cd/root/  
+
+## 3.4.在屏幕上输出字符  
+* echo "hello world"
+
+## 3.5.显示文件内容  
+*  cat your file name  
+
+## 3.6.移动文件  
+* mv file1.txt file2.txt 此时，file1.txt被删除，其内容被移到file2.txt
